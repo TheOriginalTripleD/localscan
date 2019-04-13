@@ -4,6 +4,16 @@ import socket
 import netifaces
 import ipaddress
 
+'''
+---Description---
+
+I built this as part of a local-multiplayer game I am creating in Python.
+This library is responsible for scanning a LAN the computer is currently connected
+to and seeing if any devices are listening on a given port.
+Currently only works with IPv4, but I left most of the functions flexible enough
+that it should be easy to adapt when I have time to learn about IPv6
+'''
+
 class IPDiscoveryError(Exception):
     pass
 
