@@ -111,6 +111,7 @@ async def findIPsListeningOnPort(port: int) -> list:
                 await networkScanner.aclose()
                 yield
 
+#The following is purely for testing purposes
 if __name__ == '__main__':
     def getPort(message: str = "Which port should be scanned for? ") -> int:
         try:
